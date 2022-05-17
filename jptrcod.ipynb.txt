@@ -1,0 +1,12 @@
+import pandas as pd
+data_csv=pd.read_csv('hiring.csv')
+data_csv
+
+
+n=int(input("enter number of employee"))
+a=data_csv.head(n)
+b=max(a['prices'])
+c=min(a['prices'])
+dif=b-c
+print(a)
+print('And the difference between the chosen goodie with highest price and the lowest price is  ',dif)
